@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed and Accuracy Game</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed and Accuracy Game</h1>
+        
+        <div class="controls">
+            <label for="difficulty">Choose Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        
+        <div id="text-display" class="text-display"></div>
+
+        <button id="start-button" role="button">Start Game</button>
+        <button id="end-button" role="button">End Game</button>
+
+        <textarea id="user-input" class="user-input" placeholder="Start typing..." disabled="true" ></textarea>
+        <div class="stats">
+            <p>Speed: <span id="speed">0</span> WPM</p>
+            <p>Accuracy: <span id="accuracy">100</span>%</p>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
